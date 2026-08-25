@@ -1,10 +1,8 @@
-Working on a [car-parts inventory system](https://github.com/Marwin5411-Winner/Car-Stock-monorepo) with a friend. NestJS, Nuxt, Postgres. Quotations, tax invoices, stock, receipts. It runs in a real shop.
+Pipothai อยู่ตราด ทำเว็บ
 
-I'm from Trat. Other things on here:
+ช่วงนี้ทำ [ระบบสต็อกอะไหล่](https://github.com/Marwin5411-Winner/Car-Stock-monorepo) กับเพื่อน
+ก่อนหน้านี้ทำ [เว็บเที่ยวบ้านเกิด](https://home-trat.pages.dev/) กับ [เว็บสาธารณสุขจังหวัด](https://github.com/aletheiamask/Public-Health)
 
-- [Welcome to Trat](https://github.com/aletheiamask/Welcome-to-Trat) — tourism site for my hometown. [live](https://home-trat.pages.dev/)
-- [Public Health](https://github.com/aletheiamask/Public-Health) — health info for the province (PHP, MySQL)
+นอกนั้นก็เกม มายคราฟ วาดพิกเซล
 
-Otherwise Godot, Roblox, Minecraft servers, pixel art.
-
-pipothai · aletheiamask@gmail.com
+aletheiamask@gmail.com
