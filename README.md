@@ -49,7 +49,7 @@ I started coding about two years ago with a PHP site about public health in my p
   <a href="https://www.roblox.com/games/71566751767858/LastLight"><img src="assets/quests/lastlight.svg" width="49%" alt="Last Light: a cozy exploration game on Roblox, written in Luau. Main quest."></a>
   <img src="assets/quests/mtc.svg" width="49%" alt="MTC Craft: a multicrew tank combat mod for Minecraft Forge 1.20.1. Main quest.">
   <a href="https://tarcoparoni.ropmuang.workers.dev/choocreamskinhd"><img src="assets/quests/choocream.svg" width="49%" alt="ChooCream: an HD skins mod with its own Cloudflare cloud. Main quest."></a>
-  <a href="https://modrinth.com/mod/static-resonance"><img src="assets/quests/static.svg" width="49%" alt="Static Resonance: an Origins add-on, available on Modrinth. Main quest."></a>
+  <a href="https://github.com/aletheiamask/static-resonance"><img src="assets/quests/static.svg" width="49%" alt="Static Resonance: an Origins add-on on Modrinth, source on GitHub. Main quest."></a>
   <img src="assets/quests/shoulder.svg" width="49%" alt="Shoulder Look: a client mod that lets you glance around. Main quest.">
 </p>
 
