@@ -46,9 +46,9 @@ I started two years ago with a PHP site about public health, and somewhere along
 **★ Main quests** (games and mods I'm making now)
 
 <p align="center">
-  <img src="assets/quests/lastlight.svg" width="49%" alt="Last Light: a cozy exploration game on Roblox, written in Luau. Main quest.">
+  <a href="https://www.roblox.com/games/71566751767858/LastLight"><img src="assets/quests/lastlight.svg" width="49%" alt="Last Light: a cozy exploration game on Roblox, written in Luau. Main quest."></a>
   <img src="assets/quests/mtc.svg" width="49%" alt="MTC Craft: a multicrew tank combat mod for Minecraft Forge 1.20.1. Main quest.">
-  <img src="assets/quests/choocream.svg" width="49%" alt="ChooCream: an HD skins mod with its own Cloudflare cloud. Main quest.">
+  <a href="https://tarcoparoni.ropmuang.workers.dev/choocreamskinhd"><img src="assets/quests/choocream.svg" width="49%" alt="ChooCream: an HD skins mod with its own Cloudflare cloud. Main quest."></a>
   <a href="https://modrinth.com/mod/static-resonance"><img src="assets/quests/static.svg" width="49%" alt="Static Resonance: an Origins add-on, available on Modrinth. Main quest."></a>
   <img src="assets/quests/shoulder.svg" width="49%" alt="Shoulder Look: a client mod that lets you glance around. Main quest.">
 </p>
@@ -121,6 +121,8 @@ I started two years ago with a PHP site about public health, and somewhere along
 
 <p align="center">
   <a href="https://modrinth.com/user/aletheiamask">Modrinth</a> ·
+  <a href="https://www.roblox.com/games/71566751767858/LastLight">Last Light on Roblox</a> ·
+  <a href="https://tarcoparoni.ropmuang.workers.dev/">Tacoparoni studio</a> ·
   <a href="https://home-trat.pages.dev/">Welcome to Trat</a> ·
   <a href="mailto:aletheiamask@gmail.com">aletheiamask@gmail.com</a>
 </p>
