@@ -9,6 +9,7 @@ const COLS = 5
 const CROPS = ["lolly", "cupcake", "donut"]
 const NAMES = { lolly: "lollipop", cupcake: "cupcake", donut: "donut" }
 const RIPE = 3
+const MAX_BAKERS = 200 // keep state.json small: only the top bakers are remembered
 
 export const newState = () => ({
   plots: Array.from({ length: PLOTS }, () => ({ stage: 0, crop: null })),
@@ -43,6 +44,11 @@ export function tend(prev, user, plot, at) {
     p.crop = null
   }
   s.bakers[user] = (s.bakers[user] ?? 0) + points
+  const names = Object.keys(s.bakers)
+  if (names.length > MAX_BAKERS) {
+    const keep = names.sort((a, b) => s.bakers[b] - s.bakers[a] || (a === user ? -1 : b === user ? 1 : 0)).slice(0, MAX_BAKERS)
+    s.bakers = Object.fromEntries(keep.map((u) => [u, s.bakers[u]]))
+  }
   s.log = [{ user, action, plot: plot + 1, at }, ...s.log].slice(0, 5)
   return { state: s, action, crop: p.crop }
 }

@@ -24,5 +24,8 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add profile-3d-contrib
           git diff --cached --quiet || git commit -m "chore: refresh candy blocks"
-          git pull --rebase
-          git push
+          for try in 1 2 3 4 5; do
+            git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0
+            sleep $((try * 4))
+          done
+          exit 1

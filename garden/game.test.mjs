@@ -73,3 +73,10 @@ test("spliceReadme replaces only between markers", () => {
 test("spliceReadme throws when markers are missing", () => {
   assert.throws(() => spliceReadme("no markers", "x"))
 })
+
+test("bakers list is capped at 200 and keeps the current player", () => {
+  let s = newState()
+  for (let i = 0; i < 205; i++) s = tend(s, "u" + i, i % PLOTS, NOW).state
+  assert.equal(Object.keys(s.bakers).length, 200)
+  assert.ok("u204" in s.bakers)
+})
