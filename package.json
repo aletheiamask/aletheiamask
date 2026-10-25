@@ -1,0 +1,10 @@
+{
+  "name": "aletheiamask-profile",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test garden/game.test.mjs",
+    "art": "node ../../.claude/skills/pxl-pixel-art/bin/pxl.js build art/candy.px.js --no-preview && python -I tools/upscale.py && node tools/build.mjs",
+    "garden": "node garden/game.mjs --render"
+  }
+}

@@ -1,0 +1,44 @@
+name: candy garden
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  tend:
+    if: startsWith(github.event.issue.title, 'garden|')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+      # Several visitors can play at once, so replay the move on top of the newest
+      # main until the push lands instead of queueing runs (queued runs get dropped).
+      - name: Tend the plot
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+        run: |
+          git config user.name "candy-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          for try in 1 2 3 4 5 6; do
+            git fetch -q origin main && git reset -q --hard origin/main
+            node garden/game.mjs || exit 0   # bad move: reply.md explains, nothing to commit
+            git add README.md garden/state.json
+            git commit -q -m "garden: tended by $ISSUE_USER"
+            git push -q origin HEAD:main && exit 0
+            sleep $((try * 3))
+          done
+          echo "Too many sweet tooths at once, please try again in a minute 🍬" > garden/reply.md
+      - name: Reply and close
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NUM: ${{ github.event.issue.number }}
+        run: |
+          gh issue comment "$NUM" --repo "$GITHUB_REPOSITORY" --body-file garden/reply.md
+          gh issue close "$NUM" --repo "$GITHUB_REPOSITORY"

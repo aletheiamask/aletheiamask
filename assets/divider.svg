@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="20" viewBox="0 0 840 20" role="img" aria-label="candy cane divider">
+<style>
+  :root, svg { --bg:#fff6ec; --ink:#5b3a29; --mute:#9a7461; --line:#3b2230;
+    --p:#ff8fb1; --P:#e0607e; --q:#ffc4d6; --m:#8fe3cf; --M:#2f9a86; --v:#b8a4ff; --V:#7a64c9;
+    --y:#ffe58f; --Y:#d98f1e; --stripe:#fff6ec; --track:#f3e2d3; }
+  @media (prefers-color-scheme: dark) {
+    :root, svg { --bg:#2a1b2e; --ink:#ffe9f0; --mute:#c7a9c0; --line:#120a14;
+      --q:#5a2f4a; --M:#8fe3cf; --V:#cbbcff; --Y:#ffe58f; --P:#ff8fb1;
+      --stripe:#3d2847; --track:#3d2847; }
+  }
+  text { font-family: ui-monospace, "Cascadia Mono", Consolas, "Courier New", monospace; fill: var(--ink); }
+  .th { font-family: "Noto Sans Thai", "Leelawadee UI", Tahoma, sans-serif; }
+  .pix { image-rendering: pixelated; image-rendering: crisp-edges; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+</style>
+<defs>
+  <pattern id="cane" width="16" height="16" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="16" height="16" fill="#fff6ec"/><rect width="8" height="16" fill="var(--p)"/>
+    <animate attributeName="x" from="0" to="16" dur="2.4s" repeatCount="indefinite"/>
+  </pattern></defs>
+<rect x="2" y="3" width="836" height="14" rx="7" fill="url(#cane)" stroke="var(--line)" stroke-width="2"/>
+</svg>

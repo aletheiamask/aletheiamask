@@ -1,0 +1,24 @@
+[
+  {
+    "type": "normal",
+    "fileName": "candy-day.svg",
+    "backgroundColor": "#fff6ec",
+    "foregroundColor": "#5b3a29",
+    "strongColor": "#e0607e",
+    "weakColor": "#9a7461",
+    "radarColor": "#ff8fb1",
+    "growingAnimation": true,
+    "contribColors": ["#f3e2d3", "#ffc4d6", "#ff8fb1", "#b8a4ff", "#8fe3cf"]
+  },
+  {
+    "type": "normal",
+    "fileName": "candy-night.svg",
+    "backgroundColor": "#2a1b2e",
+    "foregroundColor": "#ffe9f0",
+    "strongColor": "#ff8fb1",
+    "weakColor": "#c7a9c0",
+    "radarColor": "#8fe3cf",
+    "growingAnimation": true,
+    "contribColors": ["#3d2847", "#7a3f63", "#c55a86", "#ff8fb1", "#8fe3cf"]
+  }
+]
