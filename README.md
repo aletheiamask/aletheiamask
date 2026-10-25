@@ -11,11 +11,11 @@
   <img src="assets/save-card.svg" width="100%" alt="Save file 01. Pipothai, level 2 indie dev from Trat, Thailand. Class: Minecraft modder, Roblox builder, Gopher.">
 </p>
 
-Hi! I'm **Pipothai** from Trat, a small seaside province in the east of Thailand 🏝️
-I make cozy games, Minecraft mods, and the backend systems that keep real shops and real towns running.
-I started two years ago with a PHP site about public health, and somewhere along the way I fell into games and never climbed back out.
+Hi, I'm **Pipothai**. I live in Trat, a little province by the sea on Thailand's east coast 🏝️
 
-> สวัสดี! ยินดีที่ได้รู้จักนะ ชอบเกมอินดี้ ชอบพิกเซลอาร์ต และชอบของหวาน 🍰
+I started coding about two years ago with a PHP site about public health in my province. Then I tried making a small game in Godot, got hooked, and these days most of my evenings go to Minecraft mods and a Roblox game. The rest of the time I write Go backends for clients.
+
+> สวัสดี ชอบเกมอินดี้กับพิกเซลอาร์ต แล้วก็ของหวานด้วย 🍰 เลื่อนลงไปปลูกขนมในสวนข้างล่างได้นะ
 
 <img src="assets/divider.svg" width="100%" alt="">
 
@@ -43,7 +43,7 @@ I started two years ago with a PHP site about public health, and somewhere along
 
 ## 📜 Quest Log
 
-**★ Main quests** (games and mods I'm making now)
+**★ Main quests** (what I'm working on now)
 
 <p align="center">
   <a href="https://www.roblox.com/games/71566751767858/LastLight"><img src="assets/quests/lastlight.svg" width="49%" alt="Last Light: a cozy exploration game on Roblox, written in Luau. Main quest."></a>
@@ -53,7 +53,7 @@ I started two years ago with a PHP site about public health, and somewhere along
   <img src="assets/quests/shoulder.svg" width="49%" alt="Shoulder Look: a client mod that lets you glance around. Main quest.">
 </p>
 
-**◆ Side quests** (systems I've built for real people; the code is private, the stories aren't)
+**◆ Side quests** (client work, so the code is private)
 
 <p align="center">
   <img src="assets/quests/flood.svg" width="49%" alt="Flood Watch: a nationwide flood map for Thailand, built with Go and PostGIS. Side quest.">
@@ -62,7 +62,7 @@ I started two years ago with a PHP site about public health, and somewhere along
   <img src="assets/quests/booking.svg" width="49%" alt="Booking SaaS: a multi-tenant booking platform in Go with role-based access. Side quest.">
 </p>
 
-**✓ Cleared** (where it all started)
+**✓ Cleared** (my first projects)
 
 <p align="center">
   <img src="assets/quests/molly.svg" width="49%" alt="Molly's Maze: my first game, made in Godot 4. Cleared.">
@@ -104,7 +104,7 @@ I started two years ago with a PHP site about public health, and somewhere along
 
 ## 🍭 Candy Garden
 
-<p align="center">A tiny game you can play right here. <b>Click any plot</b>, press <b>Submit</b>, and a bot will plant, water or harvest it for you.<br>
+<p align="center">A small game you can play from here. Click a plot and press <b>Submit</b> on the issue that opens. A bot will tend the plot for you.<br>
 <sub>คลิกแปลงไหนก็ได้ แล้วกด Submit บอทจะปลูก รดน้ำ หรือเก็บเกี่ยวให้ · plant → water → water → harvest</sub></p>
 
 <!-- GARDEN:START -->
