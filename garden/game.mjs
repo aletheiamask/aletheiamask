@@ -25,6 +25,13 @@ export function parseTitle(title) {
   return n >= 1 && n <= PLOTS ? { plot: n - 1 } : null
 }
 
+// Prototype-less copy with only finite scores, so logins like "constructor" are plain keys.
+function cleanBakers(b) {
+  const out = Object.create(null)
+  for (const [u, n] of Object.entries(b ?? {})) if (Number.isFinite(n)) out[u] = n
+  return out
+}
+
 export function tend(prev, user, plot, at) {
   const s = structuredClone(prev)
   const p = s.plots[plot]
@@ -43,11 +50,12 @@ export function tend(prev, user, plot, at) {
     p.stage = 0
     p.crop = null
   }
-  s.bakers[user] = (s.bakers[user] ?? 0) + points
+  s.bakers = cleanBakers(s.bakers)
+  s.bakers[user] = (Object.hasOwn(s.bakers, user) ? s.bakers[user] : 0) + points
   const names = Object.keys(s.bakers)
   if (names.length > MAX_BAKERS) {
     const keep = names.sort((a, b) => s.bakers[b] - s.bakers[a] || (a === user ? -1 : b === user ? 1 : 0)).slice(0, MAX_BAKERS)
-    s.bakers = Object.fromEntries(keep.map((u) => [u, s.bakers[u]]))
+    s.bakers = cleanBakers(Object.fromEntries(keep.map((u) => [u, s.bakers[u]])))
   }
   s.log = [{ user, action, plot: plot + 1, at }, ...s.log].slice(0, 5)
   return { state: s, action, crop: p.crop }

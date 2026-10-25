@@ -80,3 +80,12 @@ test("bakers list is capped at 200 and keeps the current player", () => {
   assert.equal(Object.keys(s.bakers).length, 200)
   assert.ok("u204" in s.bakers)
 })
+
+test("logins that match Object.prototype keys score like anyone else", () => {
+  let s = newState()
+  s = tend(s, "constructor", 0, NOW).state
+  s = tend(s, "toString", 1, NOW).state
+  assert.equal(s.bakers.constructor, 1)
+  assert.equal(s.bakers.toString, 1)
+  assert.equal(JSON.parse(JSON.stringify(s)).bakers.constructor, 1)
+})
