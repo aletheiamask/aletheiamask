@@ -36,6 +36,7 @@ I started coding about two years ago with a PHP site about public health in my p
 | 🍦 | **Ice cream** (data) | PostgreSQL · PostGIS · TimescaleDB · Valkey · MinIO · Cloudflare D1 |
 | ✨ | **Sprinkles** (ship it) | Docker · GitHub Actions · Cloudflare Workers · Caddy · Prometheus · k6 · Playwright · Vitest |
 | 🎨 | **Frosting** (art) | Blender · Blockbench · pixel art |
+| 🥄 | **Kitchen tools** (what I cook with) | Claude · VS Code · IntelliJ IDEA · Aseprite · Figma |
 
 </details>
 
