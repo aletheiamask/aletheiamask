@@ -29,7 +29,7 @@
       "crop": "lolly"
     },
     {
-      "stage": 1,
+      "stage": 2,
       "crop": "cupcake"
     },
     {
@@ -63,9 +63,15 @@
   ],
   "harvested": 0,
   "bakers": {
-    "aletheiamask": 3
+    "aletheiamask": 4
   },
   "log": [
+    {
+      "user": "aletheiamask",
+      "action": "water",
+      "plot": 8,
+      "at": "2026-10-28T15:00:50.693Z"
+    },
     {
       "user": "aletheiamask",
       "action": "plant",
