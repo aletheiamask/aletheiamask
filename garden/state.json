@@ -25,8 +25,8 @@
       "crop": null
     },
     {
-      "stage": 0,
-      "crop": null
+      "stage": 1,
+      "crop": "lolly"
     },
     {
       "stage": 1,
@@ -63,9 +63,15 @@
   ],
   "harvested": 0,
   "bakers": {
-    "aletheiamask": 2
+    "aletheiamask": 3
   },
   "log": [
+    {
+      "user": "aletheiamask",
+      "action": "plant",
+      "plot": 7,
+      "at": "2026-10-28T15:00:13.435Z"
+    },
     {
       "user": "aletheiamask",
       "action": "plant",
