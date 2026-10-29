@@ -17,8 +17,8 @@
       "crop": null
     },
     {
-      "stage": 0,
-      "crop": null
+      "stage": 1,
+      "crop": "cupcake"
     },
     {
       "stage": 0,
@@ -63,9 +63,15 @@
   ],
   "harvested": 0,
   "bakers": {
-    "aletheiamask": 5
+    "aletheiamask": 6
   },
   "log": [
+    {
+      "user": "aletheiamask",
+      "action": "plant",
+      "plot": 5,
+      "at": "2026-10-29T18:20:22.014Z"
+    },
     {
       "user": "aletheiamask",
       "action": "water",
@@ -89,12 +95,6 @@
       "action": "plant",
       "plot": 9,
       "at": "2026-10-25T19:35:03.179Z"
-    },
-    {
-      "user": "aletheiamask",
-      "action": "plant",
-      "plot": 8,
-      "at": "2026-10-25T18:04:07.412Z"
     }
   ]
 }
