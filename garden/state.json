@@ -57,15 +57,21 @@
       "crop": null
     },
     {
-      "stage": 0,
-      "crop": null
+      "stage": 1,
+      "crop": "donut"
     }
   ],
   "harvested": 0,
   "bakers": {
-    "aletheiamask": 6
+    "aletheiamask": 7
   },
   "log": [
+    {
+      "user": "aletheiamask",
+      "action": "plant",
+      "plot": 15,
+      "at": "2026-11-02T10:33:58.588Z"
+    },
     {
       "user": "aletheiamask",
       "action": "plant",
@@ -89,12 +95,6 @@
       "action": "plant",
       "plot": 7,
       "at": "2026-10-28T15:00:13.435Z"
-    },
-    {
-      "user": "aletheiamask",
-      "action": "plant",
-      "plot": 9,
-      "at": "2026-10-25T19:35:03.179Z"
     }
   ]
 }
